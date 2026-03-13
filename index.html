@@ -1,0 +1,80 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Seção principal */
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+/* Imagem */
+.preview img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.preview img:hover {
+    transform: scale(1.05);
+}
+
+/* Caixa de texto */
+.info {
+    max-width: 500px;
+    background: rgba(222, 108, 108, 0.849);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.info h2 {
+    margin-bottom: 15px;
+    color: #00ffff;
+}
+
+.info p {
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
