@@ -7,7 +7,14 @@
 }
 
 body {
-    background: linear-gradient(135deg, #141e30, #243b55);
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://raw.githubusercontent.com/renatoveiga12/burnessite/main/img.fundo.png.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     color: white;
     min-height: 100vh;
     display: flex;
