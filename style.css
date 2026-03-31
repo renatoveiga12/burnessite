@@ -7,10 +7,9 @@
 }
 
 body {
-    background: 
-        linear-gradient(90deg, #e65100, #ff7043),
-        url('https://raw.githubusercontent.com/renatoveiga12/burnessite/main/img.fundo.png.png');
-
+  background: linear-gradient(90deg, #e65100, #ff7043),
+              url('https://raw.githubusercontent.com/renatoveiga12/burnessite/main/img.fundo.png.png');
+}
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
