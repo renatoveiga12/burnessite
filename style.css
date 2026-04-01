@@ -9,7 +9,7 @@
 body {
   background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("img.fundo.png.png");
+    url("img/fundo.png.png");
 
   background-size: cover;
   background-position: center;
@@ -17,6 +17,7 @@ body {
 
   min-height: 100vh;
 }
+
 /* Cabeçalho */
 header {
   position: absolute;
