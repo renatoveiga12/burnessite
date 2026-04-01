@@ -21,11 +21,13 @@ body {
 }
 /* Cabeçalho */
 header {
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
-  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   text-align: center;
-  padding: 30px;
-  width: 100%;
+  color: white;
 }
 
 header h1 {
