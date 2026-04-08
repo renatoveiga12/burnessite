@@ -1,134 +1,100 @@
-/* Reset */
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* FUNDO */
 body {
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("img.fundo.png.png");
+    url("img_fundo.png.png");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   min-height: 100vh;
 }
 
-/* Cabeçalho */
-header {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  text-align: right;
-  color: white;
-}
-
-header h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-    text-align: center;
-    justify-content: center
-}
-
-header p {
-  font-size: 16px;
-    text-align: center;
-      justify-content: center
-}
-
-/* Seção principal */
-.preview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 20px;
-    flex-wrap: wrap;
-}
-
-/* Imagem */
-.preview img {
-    width: 350px;
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    transition: 0.3s;
-}
-
-.preview img:hover {
-    transform: scale(1.05);
-}
-
-/* Caixa de texto */
-.info {
-  background: rgba(34, 139, 34, 0.8);
-  padding: 20px;
-  border-radius: 15px;
-  color: white;
-}
-
-.info h2 {
-    margin-bottom: 15px;
-    color: #00ffff;
-}
-
-.info p {
-    line-height: 1.6;
-}
-
-/* Rodapé */
-footer {
-    margin-top: auto;
-    background: #111;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-}
-burnessite
- ├── index.html
- └── style.css
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #00ffff;
-    color: #000;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.card {
-  background: rgba(34, 139, 34, 0.8);
-  padding: 20px;
-  border-radius: 15px;
-  color: white;
-}
-.info {
-  background: rgba(34, 139, 34, 0.8);
-  padding: 20px;
-  border-radius: 15px;
-  color: white;
-}
+/* TOPO */
 .topo {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  gap: 15px;
+
+  background: rgba(0, 0, 0, 0.6);
   padding: 15px;
-  background: rgba(0,0,0,0.6);
 }
 
+/* LOGO PEQUENA */
 .logo {
-  width: 80px;
-  position: absolute;
-  left: 20px;
+  width: 60px;
 }
 
+/* TITULO */
 .topo h1 {
   color: white;
-  font-size: 32px;
+  font-size: 28px;
+}
+
+/* ÁREA PRINCIPAL */
+.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* IMAGEM DO JOGO */
+.imagem-jogo {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* BOTÕES */
+.botoes {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* ESTILO GERAL BOTÃO */
+.btn {
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* BOTÃO JOGAR */
+.jogar {
+  background: #28a745;
+}
+
+.jogar:hover {
+  background: #218838;
+}
+
+/* BOTÃO PERSONA */
+.persona {
+  background: #ff5733;
+}
+
+.persona:hover {
+  background: #e04e2b;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
 }
