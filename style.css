@@ -101,3 +101,9 @@ burnessite
     text-decoration: none;
     font-weight: bold;
 }
+.card {
+  background: rgba(34, 139, 34, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
