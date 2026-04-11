@@ -8,30 +8,54 @@
 </head>
 
 <body>
- <header class="topo">
-   <h1>DinoRunner</h1>
- </header>
+
+  <!-- TOPO -->
+  <header class="topo">
+    <h1>DinoRunner</h1>
+
+    <div class="botoes-topo">
+      <a href="persona_dino_runner_com_imagem.pdf" class="botao">👤 Persona</a>
+      <a href="https://www.instagram.com/renatoveigaa/" target="_blank" class="botao">📱 Instagram</a>
+      <a href="https://wa.me/5544997088565" target="_blank" class="botao">💬 WhatsApp</a>
+      <button onclick="mostrarSobre()" class="botao">📖 Sobre</button>
+    </div>
   </header>
 
+  <!-- CONTEÚDO -->
   <section class="preview">
+    <img src="dino.png.png" class="imagem-jogo">
 
-  <img src="dino.png.png" class="imagem-jogo">
+    <div class="botoes">
+      <a href="#" class="botao">🎮 Jogar</a>
+    </div>
+  </section>
 
-  <div class="botoes">
-    <a href="#" class="botao">🎮 Jogar</a>
-    <a href="persona_dino_runner_com_imagem.pdf" target="_blank" class="botao">👤 Persona</a>
-  </div>
-
-  <div class="sobre">
+  <!-- SOBRE (SEM TEXTO ANTIGO) -->
+  <div id="sobre" class="sobre" style="display: none;">
     <h2>Sobre o jogo</h2>
     <p>
-      Prepare-se para correr! Dino Runner é um jogo emocionante onde você controla
-      um dinossauro veloz, desviando de obstáculos e buscando o maior recorde possível.
+      Dino Runner é um jogo onde você controla um dinossauro veloz,
+      desviando de obstáculos e tentando alcançar o maior recorde possível.
     </p>
   </div>
 
-</section>
- </body>
- </html>
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2026 DinoRunner - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- SCRIPT (TEM QUE FICAR AQUI EMBAIXO) -->
+  <script>
+    function mostrarSobre() {
+      let sobre = document.getElementById("sobre");
+
+      if (sobre.style.display === "none" || sobre.style.display === "") {
+        sobre.style.display = "block";
+      } else {
+        sobre.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
 </html>
