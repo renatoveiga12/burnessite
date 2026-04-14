@@ -1,62 +1,35 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: url("img.fundo.png.png") no-repeat center center fixed;
-  background-size: cover;
-  text-align: center;
-  color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: url("../img.fundo.png.png") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
 
-header {
-  background: rgba(0,0,0,0.6);
-  padding: 20px;
+/* TOPO */
+.topo {
+    text-align: center;
+    padding: 30px;
 }
 
-.botoes-topo {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-/* BOTÕES MENORES */
+/* BOTÕES */
 .botao {
-  display: inline-block;
-  padding: 10px 20px; /* menor */
-  background: #00c3ff;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 14px; /* menor */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.botao:hover {
-  background: #0099cc;
-}
-
-.preview {
-  margin-top: 40px;
+/* IMAGEM CENTRAL */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .imagem-jogo {
-  width: 300px;
-  border-radius: 20px;
-}
-
-.botoes {
-  margin-top: 20px;
-}
-
-.sobre {
-  background: rgba(255,255,255,0.8);
-  color: black;
-  margin: 30px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-footer {
-  background: black;
-  padding: 10px;
-  margin-top: 40px;
+    width: 300px;
 }
