@@ -1,61 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DinoRunner</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Dino Runner</title>
+
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-  <!-- TOPO -->
-  <header class="topo">
-    <h1>DinoRunner</h1>
+    <header class="topo">
+        <h1>DINO RUNNER</h1>
 
-    <div class="botoes-topo">
-      <a href="persona_dino_runner_com_imagem.pdf" class="botao">👤 Persona</a>
-      <a href="https://www.instagram.com/renatoveigaa/" target="_blank" class="botao">📱 Instagram</a>
-      <a href="https://wa.me/5544997088565" target="_blank" class="botao">💬 WhatsApp</a>
-      <button onclick="mostrarSobre()" class="botao">📖 Sobre</button>
+        <div class="botoes-topo">
+            <a href="jogar.html" class="botao">Jogar</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <img src="../dino.png.png" class="imagem-jogo">
     </div>
-  </header>
-
-  <!-- CONTEÚDO -->
-  <section class="preview">
-    <img src="dino.png.png" class="imagem-jogo">
-
-    <div class="botoes">
-      <a href="jogar.html" class="botao">🎮 Jogar</a>
-    </div>
-  </section>
-
-  <!-- SOBRE (SEM TEXTO ANTIGO) -->
-  <div id="sobre" class="sobre" style="display: none;">
-    <h2>Sobre o jogo</h2>
-    <p>
-      Dino Runner é um jogo onde você controla um dinossauro veloz,
-      desviando de obstáculos e tentando alcançar o maior recorde possível.
-    </p>
-  </div>
-
-  <!-- RODAPÉ -->
-  <footer>
-    <p>© 2026 DinoRunner - Todos os direitos reservados</p>
-  </footer>
-
-  <!-- SCRIPT (TEM QUE FICAR AQUI EMBAIXO) -->
-  <script>
-    function mostrarSobre() {
-      let sobre = document.getElementById("sobre");
-
-      if (sobre.style.display === "none" || sobre.style.display === "") {
-        sobre.style.display = "block";
-      } else {
-        sobre.style.display = "none";
-      }
-    }
-  </script>
 
 </body>
 </html>
