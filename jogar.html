@@ -3,43 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Jogar</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="../style.css">
 
     <style>
         .game-container {
+            display: flex;
+            justify-content: center;
             margin-top: 40px;
-            padding: 20px;
-            background: rgba(0,0,0,0.6);
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-            display: inline-block;
         }
 
-        iframe {
+        .botao-voltar {
             display: block;
-            border: none;
-            border-radius: 10px;
-        }
-
-        .voltar {
-            display: inline-block;
-            margin-top: 20px;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 18px;
         }
     </style>
 </head>
 
 <body>
 
-<h1>🎮 Jogar agora</h1>
+    <a href="index.html" class="botao-voltar">⬅ Voltar</a>
 
-<div class="game-container">
-    <!-- IMPORTANTE: ./ resolve o erro -->
-    <iframe src="jogo/DinoRunner/index.html" width="800" height="600"></iframe>
-</div>
-
-<br>
-
-<a href="./index.html" class="botao voltar">⬅ Voltar</a>
+    <div class="game-container">
+        <iframe src="https://chromedino.com/" width="800" height="400"></iframe>
+    </div>
 
 </body>
 </html>
