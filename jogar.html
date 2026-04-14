@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Jogar</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Jogar</title>
 
-    <style>
-        .game-container {
-            margin-top: 40px;
-            padding: 20px;
-            background: rgba(0,0,0,0.6);
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-            display: inline-block;
-        }
+  <style>
+    .game-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-        iframe {
-            display: block;
-            border: none;
-            border-radius: 10px;
-        }
-
-        .voltar {
-            display: inline-block;
-            margin-top: 20px;
-        }
-    </style>
+    .botao-voltar {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>🎮 Jogar agora</h1>
+  <h1>🎮 Jogar agora</h1>
 
-<div class="game-container">
-    <!-- IMPORTANTE: ./ resolve o erro -->
+  <div class="game-container">
     <iframe src="jogo/DinoRunner/index.html" width="800" height="600"></iframe>
-</div>
+  </div>
 
-<br>
+  <br>
 
-<a href="./index.html" class="botao voltar">⬅ Voltar</a>
+  <a href="./index.html" class="botao-voltar">⬅ Voltar</a>
 
 </body>
 </html>
