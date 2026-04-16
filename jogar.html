@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Jogar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogar</title>
 
-    <style>
-        iframe {
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #111;
+      color: white;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .game-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 90%;
+      height: 80vh;
+      border: none;
+      max-width: 1000px;
+    }
+
+    .botao-voltar {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #00ff88;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Jogar agora</h1>
+  <h1>🎮 Jogar agora</h1>
 
-<iframe src="DinoRunner/index.html" width="800" height="600"></iframe>
+  <div class="game-container">
+    <iframe src="./jogo/DinoRunner/index.html"></iframe>
+  </div>
 
-<a href="index.html">Voltar</a>
+  <a href="./index.html" class="botao-voltar">⬅ Voltar</a>
 
 </body>
 </html>
